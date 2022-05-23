@@ -1,0 +1,38 @@
+@mixin heading ($font-size, $color) {
+    font-weight:700;
+    font-family:$primary-font-family;
+    color:$color;
+    font-size:$font-size;
+}
+
+@mixin logo{
+    background-color:$primary-bg-color;
+    border:3px solid $primary-color;
+    font-size: 26px;
+    font-family:$primary-font-family;
+    color:$primary-color;
+    font-weight:700;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin icon{
+    background-color:$primary-bg-color;
+    border:0.5px solid rgba(255,255,255,0.2);
+}
+
+@mixin navigation{
+    width:63px;
+    height:59px;
+    background-color:$primary-icon-bg-color;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

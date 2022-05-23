@@ -1,0 +1,98 @@
+.wrapper{
+    grid-template-columns: 25px 1fr 25px;
+    grid-template-rows: 425px  60px;
+    
+
+.hero{
+    grid-column: 2/3;
+    grid-row:1;
+
+    .container{
+        width:100%;
+        padding-top:14px;
+        padding-left:25px;
+
+        header{
+
+            margin-bottom:46px;
+             .logo{
+
+                width:36px;
+                height:36px;
+                 margin-top:11px;
+                 margin-right:10px;
+
+                 span{
+                    @include heading(26px, $primary-color);
+                }
+             }
+
+             .title{
+                @include heading(14px, $primary-color);
+                 padding-top:12px;
+                 margin-right:50px;
+             }
+
+      }
+
+      .photography{
+        margin-left:10px;
+        margin-bottom:5px;
+    }
+
+      .smaller{
+          padding-left:9px;
+      }
+
+      .larger{
+          padding-left:13px;
+          margin-bottom:30px;
+      }
+
+      .date{
+          padding-left:12px;
+          font-size:14px;
+          max-width:80%;
+          margin-bottom:40px;
+      }
+
+      .admission{
+
+        margin-bottom:52px;
+
+      .admission-icon{
+          margin-left:10px;
+          margin-right:6px;
+      }
+
+    }
+
+      .hero-icons{
+          align-self: center;
+          padding-right:25px;
+
+          .icon{
+            width:45px;
+            height:45px;
+          }
+      }
+    }
+}
+
+.slider{
+    grid-column: 1/4;
+    grid-row:2;
+    background-color:$primary-icon-bg-color;
+
+    .arrows{
+        .arrow{
+            i{
+                color:$primary-icon-bg-color;
+            }
+        }
+        
+    }
+}
+
+}
+

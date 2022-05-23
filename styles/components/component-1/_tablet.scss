@@ -1,0 +1,129 @@
+@media (min-width:$tablet-width){
+
+.wrapper{
+    grid-template-columns: 40px 344px 1fr;
+    grid-template-rows: 423px  60px;
+    background-color:$secondary-bg-color;
+    position: relative;
+
+    .hero{
+    
+        .container{
+            padding-top:0;
+            padding-left:35px;
+    
+            header{
+    
+                .logo{
+                    width:45px;
+                    height:45px;
+                    margin-top:25px;
+                    margin-right:5px;
+    
+                    span{
+                        @include heading(32px, $primary-color);
+                    }
+                }
+    
+                .title{
+                    @include heading(18px, $primary-color);
+                    padding-top:30px;
+                }
+
+                .menu-btn{
+                    position:absolute;
+                    top:0;
+                    left:384px;
+                }
+
+    
+            }
+    
+            .photography{
+                 margin-left:0;
+            }
+            
+            .smaller{
+                padding-left:0;
+            }
+
+            .larger{
+                padding-left:0;
+            }
+    
+            .date{
+                font-size:16px;
+                padding-left:0;
+                width:70%;
+            }
+    
+            .admission{
+                font-size:18px;
+                font-weight:700;
+                margin-bottom:54px;
+                 
+                .admission-icon{
+                    margin-left:0;
+                }
+
+                
+            }
+    
+            .hero-icons{
+               align-self:flex-end;
+               padding-right:0;
+
+               .icon{
+                   width:43px;
+                   height:43px;
+               }
+            }
+        }
+    }
+}
+
+.slider{
+    grid-column:2/span 2;
+    grid-row:2;
+    position:relative;
+
+     .arrows{
+        justify-content: flex-end;
+        padding-right:40px;
+
+        .arrow{
+            @include center;
+
+            height:60px;
+            width:53px;
+            border-left: 1px solid rgba(255,255,255,0.3);
+
+            i{
+            color: $primary-color !important;
+            }
+
+            
+        }
+
+        .right-arrow{
+            border-right:1px solid rgba(255,255,255,0.3);
+        }
+
+        
+
+
+    }
+}
+
+.slider:after{
+    content:'';
+    position: absolute;
+    background-color: #dbdbdb;
+    top:0;
+    left:0;
+    bottom:0;
+    width:40px;
+
+}
+
+}

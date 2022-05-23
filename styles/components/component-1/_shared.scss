@@ -1,0 +1,110 @@
+.hero{
+    background-color:$primary-bg-color;
+
+    .container{
+
+        header{
+
+            .logo{
+                 @include logo;
+                
+            }
+
+            .menu-btn{
+                @include navigation;
+
+                i{
+                    color:$primary-color;
+                }
+            }
+        }
+
+        .photography{
+             background-color: $primary-icon-bg-color;
+             width:100px;
+             height:20px;
+             padding-left:10px;
+             
+             span{
+                 font-family: $primary-font-family;
+                 color:$primary-color;
+                 font-size:10px;
+                 line-height:18px;
+                 font-weight:400;
+             }
+        } 
+
+        .smaller{
+            @include heading(22px, $primary-color);
+            line-height:24px;
+        }
+
+        .larger{
+            @include heading(24px, $primary-color);
+            position:relative;
+        }
+
+        .larger::after{
+            content: "";
+            position:absolute;
+            height:1px;
+            width:210px;
+            background-color: #fff;
+            top:40px;
+            left:10px;
+            opacity: 0.3;
+        }
+
+        .date{
+            display:inline-block;
+            color:$primary-color;
+            font-weight:300;
+            line-height: 20px;
+            position: relative;
+        }
+
+        .date:after{
+            content: "";
+            position:absolute;
+            height:1px;
+            width:205px;
+            background-color: #fff;
+            opacity: 0.3;
+            top:60px;
+            left:10px;
+        }
+
+        .admission{
+            font-size:16px;
+            font-weight:700;
+            font-family:$primary-font-family;
+            color:$secondary-text-color;
+
+            .admission-icon{
+                background-color:$primary-icon-bg-color;
+                width:21px;
+                height:21px;
+                border-radius:50%;
+
+                @include center;
+
+                i{
+                color:$primary-bg-color;
+                }
+            }
+        }
+
+        .hero-icons{
+
+            .icon{
+
+                @include icon;
+                @include center;
+
+                i{
+                    color:$icon-color;
+                }
+            }
+        }
+    }
+}

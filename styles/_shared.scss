@@ -1,0 +1,24 @@
+p{
+    font-family:$primary-font-family;
+}
+
+span{
+    font-family:$secondary-font-family;
+}
+
+.flex{
+    display:flex;
+}
+
+.justify{
+    justify-content: space-between;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.grid{
+    display:grid;
+}
+

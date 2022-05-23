@@ -1,0 +1,85 @@
+@media (min-width:$desktop-width) {
+
+    .wrapper {
+        grid-template-columns: 200px 349px 1fr;
+        grid-template-rows: 423px 60px;
+        position: relative;
+
+        .hero {
+
+            .container {
+
+                header {
+
+                    .menu-btn {
+                        position: absolute;
+                        top: 0;
+                        left: 548px;
+                    }
+                }
+
+                .larger {
+                    position: relative;
+                }
+
+                .larger::after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 280px;
+                    background-color: #fff;
+                    top: 40px;
+                    left:0;
+                    opacity: 0.25;
+                }
+
+                .date{
+                    position:relative;
+                }
+
+                .date:after{
+                    content: "";
+                    position:absolute;
+                    height:1px;
+                    width:280px;
+                    background-color: #fff;
+                    opacity: 0.25;
+                    top:60px;
+                    left:0;
+                }
+            }
+        }
+    }
+
+    .slider {
+        grid-column: 2/span 2;
+        grid-row: 2;
+        position: relative;
+
+        .arrows {
+            justify-content: flex-end;
+            padding-right: 200px;
+
+            .arrow {
+                @include center;
+
+                height: 60px;
+                width: 57px;
+
+
+            }
+         }
+    }
+
+    .slider:after {
+        content: '';
+        position: absolute;
+        background-color: #dbdbdb;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 550px;
+
+    }
+
+}
