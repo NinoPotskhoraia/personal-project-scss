@@ -1,0 +1,52 @@
+@media (min-width:$tablet-width){
+
+.grid-container{
+
+    .content{
+
+        .text-content{
+
+            padding-left:75px;
+
+            text-align: left !important;
+            min-width:60%;
+
+            .overview{
+                @include heading(30px, $dark-text-color);
+                padding-top:2px;
+                margin-bottom:40px;
+            }
+
+            .underlined{
+
+                font-size: 18px;
+                word-spacing: -2px;
+                width:93%;
+                line-height:30px;
+                margin-bottom:30px;
+            }
+
+            .paragraph{
+                display:flex;
+                margin-bottom:20px;
+
+                .one{
+                    max-width:44%;
+                }
+
+                .two{
+                    max-width:45%;
+                    line-height:18px;
+                }
+            }
+
+            .regular{
+                width:88%;
+                word-spacing: -2px;
+            }
+
+        }
+    }
+}
+
+}

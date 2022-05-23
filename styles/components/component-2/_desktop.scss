@@ -1,0 +1,40 @@
+@media (min-width:$desktop-width){
+    .grid-container{
+        grid-template-columns: 200px 349px 1fr;
+        grid-template-rows: 523px ;
+
+        .light-grey{
+            background-color:$secondary-bg-color;
+        }
+
+        .dark-grey{
+            background-color:$dark-grey-bg ;
+        }
+
+        .content{
+            
+            .text-content{
+                padding-left:33px;
+                max-width:75%;
+
+                .underlined{
+                    margin-bottom:30px;
+                    text-align: justify;
+                    font-size: 20px;
+                   
+                }
+
+                .paragraph{
+                    word-spacing: -2px;
+
+                    .one{
+                        width:47%;
+                        margin-right:18px;
+                    }
+
+                   
+                }
+            }
+        }
+    }
+}

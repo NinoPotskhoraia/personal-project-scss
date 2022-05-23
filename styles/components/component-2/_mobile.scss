@@ -1,0 +1,39 @@
+.grid-container{
+    grid-template-columns: 0px 0px 1fr;
+
+    .content{
+        padding:37px 15px;
+
+        .text-content{
+            .overview{
+                @include heading(24px, $dark-text-color);
+                margin-bottom:23px;
+            }
+
+            .underlined{
+                font-size:16px;
+                line-height:30px;
+                margin-bottom:20px;
+            }
+
+            .paragraph{
+                font-size:14px;
+                line-height: 20px;
+
+                .one{
+                    margin-bottom:10px;
+                }
+
+                .two{
+                    margin-bottom:17px;
+                }
+            }
+
+            .regular{
+                font-size:14px;
+                line-height:19px;
+            }
+        }
+    }
+}
+
