@@ -1,0 +1,34 @@
+footer {
+
+    background-color:$primary-icon-bg-color;
+
+    .footer-container{
+       
+
+        .inner-container{
+
+         .brand{
+
+             .footer-logo{
+                 @include center;
+             }
+         }
+
+         .footer-text{
+             color:$secondary-text-color;
+         }
+
+         
+
+        }
+
+        .up{
+
+            @include center;
+
+            i{
+                color:$primary-color;
+            }
+         }
+    }
+}

@@ -1,0 +1,25 @@
+@media(min-width:$desktop-width){
+
+    footer{
+
+        .footer-container{
+            align-items: center;
+
+            .inner-container{
+                flex-direction: row;
+                width:75%;
+                padding-left:148px;
+                padding-top:20px;
+
+
+                .footer-text{
+                    padding-top:15px;
+                }
+            }
+
+            .up{
+                margin-bottom:15px;
+            }
+        }
+    }
+}

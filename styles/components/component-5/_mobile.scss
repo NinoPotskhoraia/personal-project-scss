@@ -1,0 +1,47 @@
+footer{
+    height:180px;
+
+    .footer-container{
+          padding:26px 25px;
+          padding-bottom:20px;
+    
+        .inner-container{
+            flex-direction: column;
+        
+
+        .brand{
+
+            margin-bottom:36px;
+
+            .footer-logo{
+                width:39px;
+                height:39px;
+                border:3px solid $primary-color;
+                margin-right:7px;
+
+                p{
+                    @include heading(28px, $primary-color);
+                }
+            }
+
+            .footer-title{
+                @include heading(16px, $primary-color);
+                padding-top:3px;
+            }
+        }
+
+        .footer-text{
+            font-size:12px;
+            font-weight:400;
+        }
+
+    }
+
+    .up{
+        width:39px;
+        height:39px;
+        border:1px solid $primary-color;
+    }
+
+    }
+}

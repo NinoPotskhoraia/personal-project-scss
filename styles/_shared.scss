@@ -25,5 +25,6 @@ span{
 .icon{
     @include center;
     @include icon;
+    cursor:pointer;
 }
 

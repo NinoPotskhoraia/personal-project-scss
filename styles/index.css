@@ -34,6 +34,7 @@ span {
   align-items: center;
   background-color: #ff4242;
   border: 0.5px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 .wrapper {
@@ -612,7 +613,7 @@ section.location {
 section.location .location-wrapper {
   padding-top: 33px;
 }
-section.location .location-wrapper .title {
+section.location .location-wrapper .title-venu {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -654,11 +655,12 @@ section.location .location-wrapper .location-icons .icon {
 @media (min-width: 768px) {
   section.location {
     grid-template-columns: 40px 344px 1fr;
+    grid-template-rows: 437px;
   }
   section.location .location-wrapper {
     padding-top: 52px;
   }
-  section.location .location-wrapper .title {
+  section.location .location-wrapper .title-venu {
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
@@ -706,7 +708,7 @@ section.location .location-wrapper .location-icons .icon {
   section.location .location-wrapper {
     padding-top: 62px;
   }
-  section.location .location-wrapper .title {
+  section.location .location-wrapper .title-venu {
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
@@ -793,6 +795,130 @@ section.location .location-wrapper .location-icons .icon i {
 }
 section.location .location-wrapper .location-icons .icon i:hover {
   color: #111111;
+}
+
+footer {
+  height: 180px;
+}
+footer .footer-container {
+  padding: 26px 25px;
+  padding-bottom: 20px;
+}
+footer .footer-container .inner-container {
+  flex-direction: column;
+}
+footer .footer-container .inner-container .brand {
+  margin-bottom: 36px;
+}
+footer .footer-container .inner-container .brand .footer-logo {
+  width: 39px;
+  height: 39px;
+  border: 3px solid #ffffff;
+  margin-right: 7px;
+}
+footer .footer-container .inner-container .brand .footer-logo p {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+}
+footer .footer-container .inner-container .brand .footer-title {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  padding-top: 3px;
+}
+footer .footer-container .inner-container .footer-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+footer .footer-container .up {
+  width: 39px;
+  height: 39px;
+  border: 1px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 180px;
+  }
+  footer .footer-container {
+    padding: 37px 85px;
+    padding-bottom: 20px;
+  }
+  footer .footer-container .inner-container {
+    flex-direction: column;
+  }
+  footer .footer-container .inner-container .brand {
+    margin-bottom: 18px;
+  }
+  footer .footer-container .inner-container .brand .footer-logo {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #ffffff;
+    margin-right: 7px;
+  }
+  footer .footer-container .inner-container .brand .footer-logo p {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+  }
+  footer .footer-container .inner-container .brand .footer-title {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 3px;
+  }
+  footer .footer-container .inner-container .footer-text {
+    font-size: 14px;
+    font-weight: bolder;
+    padding-left: 5px;
+  }
+  footer .footer-container .up {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #ffffff;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1400px) {
+  footer .footer-container {
+    align-items: center;
+  }
+  footer .footer-container .inner-container {
+    flex-direction: row;
+    width: 75%;
+    padding-left: 148px;
+    padding-top: 20px;
+  }
+  footer .footer-container .inner-container .footer-text {
+    padding-top: 15px;
+  }
+  footer .footer-container .up {
+    margin-bottom: 15px;
+  }
+}
+footer {
+  background-color: #111111;
+}
+footer .footer-container .inner-container .brand .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container .inner-container .footer-text {
+  color: #fefefe;
+}
+footer .footer-container .up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container .up i {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
