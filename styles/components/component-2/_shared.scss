@@ -12,18 +12,10 @@ main{
                 .underlined{
                     
                     text-decoration: underline 1px $underline-color;
+                    text-underline-offset: 8px;
                     padding-bottom:2px;               
 
-                    // &:last-child::after{
-                    //    content: "";
-                    //    position:absolute;
-                    //    height:1px;
-                    //    width:207px;
-                    //    background-color: $underline-color;
-                    //    top:30px;
-                    //    left:30px;
-                       
-                    // }
+                  
 
                 }
 

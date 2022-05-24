@@ -95,11 +95,16 @@
             @include center;
 
             height:60px;
-            width:53px;
+            width:56px;
             border-left: 1px solid rgba(255,255,255,0.3);
 
             i{
             color: $primary-color !important;
+            cursor:pointer;
+            }
+
+            i:hover{
+                color:$primary-bg-color !important;
             }
 
             

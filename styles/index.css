@@ -194,11 +194,15 @@ span {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 53px;
+    width: 56px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
   }
   .slider .arrows .arrow i {
     color: #ffffff !important;
+    cursor: pointer;
+  }
+  .slider .arrows .arrow i:hover {
+    color: #ff4242 !important;
   }
   .slider .arrows .right-arrow {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -303,6 +307,7 @@ span {
 }
 .hero .container header .menu-btn i {
   color: #ffffff;
+  cursor: pointer;
 }
 .hero .container .photography {
   background-color: #111111;
@@ -493,6 +498,7 @@ main .grid-container .content .text-content {
 }
 main .grid-container .content .text-content .underlined {
   text-decoration: underline 1px #dbdbdb;
+  text-underline-offset: 8px;
   padding-bottom: 2px;
 }
 
@@ -556,7 +562,7 @@ section.gallery .gallery-container .big-cell .row-1 {
   section.gallery .gallery-container .big-cell .row-2 .cell {
     background-color: #ffffff;
   }
-  section.gallery .gallery-container .big-cell .row-2 .cell.red {
+  section.gallery .gallery-container .big-cell .row-2 .cell:hover {
     border: 7px solid #ff4242;
   }
 }
@@ -576,9 +582,6 @@ section.gallery .gallery-container .big-cell .row-1 {
     width: 622px;
     height: 409px;
   }
-  section.gallery .gallery-container .big-cell .row-2 .cell.red {
-    border: none;
-  }
   section.gallery .gallery-container .gallery-cells {
     align-self: flex-end;
     position: relative;
@@ -592,7 +595,7 @@ section.gallery .gallery-container .big-cell .row-1 {
   section.gallery .gallery-container .gallery-cells .cells-grid .cell {
     background-color: #ffffff;
   }
-  section.gallery .gallery-container .gallery-cells .cells-grid .cell.red {
+  section.gallery .gallery-container .gallery-cells .cells-grid .cell:hover {
     border: 7px solid #ff4242;
   }
   section.gallery .gallery-container .gallery-cells .heading {
@@ -919,6 +922,10 @@ footer .footer-container .up {
 }
 footer .footer-container .up i {
   color: #ffffff;
+  cursor: pointer;
+}
+footer .footer-container .up i:hover {
+  color: #ff4242;
 }
 
 /*# sourceMappingURL=index.css.map */

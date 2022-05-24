@@ -28,6 +28,11 @@ footer {
 
             i{
                 color:$primary-color;
+                cursor:pointer;
+
+                &:hover{
+                    color:$primary-bg-color;
+                }
             }
          }
     }

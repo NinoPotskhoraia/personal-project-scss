@@ -16,14 +16,6 @@
                background-color:$primary-color;
                width:622px;
                height:409px;
-
-               .row-2{
-                   .cell{
-                       &.red{
-                           border:none;
-                       }
-                   }
-               }
             }
 
             .gallery-cells{
@@ -40,7 +32,7 @@
                     .cell{
                         background-color:$primary-color;
 
-                        &.red{
+                        &:hover{
                             @include red-border;
                         }
                     }
