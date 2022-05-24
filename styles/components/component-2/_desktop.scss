@@ -1,7 +1,7 @@
 @media (min-width:$desktop-width){
     .grid-container{
         grid-template-columns: 200px 349px 1fr;
-        grid-template-rows: 523px ;
+        grid-template-rows: 523px;
 
         .light-grey{
             background-color:$secondary-bg-color;

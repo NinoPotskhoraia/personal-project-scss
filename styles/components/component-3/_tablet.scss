@@ -1,0 +1,44 @@
+@media(min-width:$tablet-width){
+    section.gallery{
+    .gallery-container{
+        
+        padding-top:45px;
+
+        .gallery-cells{
+
+            align-self: flex-start;
+
+            .heading{
+                @include heading(30px, $secondary-text-color);
+                padding-left:35px;
+                margin-bottom:20px;
+            }
+        }
+
+        .big-cell{
+            grid-template-rows: 296px 1fr;
+            gap:22px;
+            width:592px;
+            height:423px;
+
+            .row-1{
+                background-color:$primary-color;
+            }
+
+            .row-2{
+                grid-template-columns: repeat(5, 1fr);
+                gap:13px;
+
+                .cell{
+                    background-color:$primary-color;
+
+                    &.red{
+                        @include red-border;
+                    }
+                }
+            }
+        }
+    }
+
+}
+}

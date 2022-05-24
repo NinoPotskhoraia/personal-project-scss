@@ -412,6 +412,9 @@ span {
 }
 
 @media (min-width: 768px) {
+  .grid-container {
+    grid-template-rows: 470px;
+  }
   .grid-container .content .text-content {
     padding-left: 75px;
     text-align: left !important;
@@ -485,6 +488,106 @@ main .grid-container .content .text-content {
 main .grid-container .content .text-content .underlined {
   text-decoration: underline 1px #dbdbdb;
   padding-bottom: 2px;
+}
+
+section.gallery .gallery-container {
+  padding: 38px 50px 70px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+section.gallery .gallery-container .gallery-cells .heading {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fefefe;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+section.gallery .gallery-container .big-cell {
+  grid-template-rows: 191px;
+  width: 271px;
+}
+section.gallery .gallery-container .big-cell .row-1 {
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  section.gallery .gallery-container {
+    padding-top: 45px;
+  }
+  section.gallery .gallery-container .gallery-cells {
+    align-self: flex-start;
+  }
+  section.gallery .gallery-container .gallery-cells .heading {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #fefefe;
+    font-size: 30px;
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
+  section.gallery .gallery-container .big-cell {
+    grid-template-rows: 296px 1fr;
+    gap: 22px;
+    width: 592px;
+    height: 423px;
+  }
+  section.gallery .gallery-container .big-cell .row-1 {
+    background-color: #ffffff;
+  }
+  section.gallery .gallery-container .big-cell .row-2 {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 13px;
+  }
+  section.gallery .gallery-container .big-cell .row-2 .cell {
+    background-color: #ffffff;
+  }
+  section.gallery .gallery-container .big-cell .row-2 .cell.red {
+    border: 7px solid #ff4242;
+  }
+}
+@media (min-width: 1400px) {
+  section.gallery {
+    padding-top: 30px;
+  }
+  section.gallery .gallery-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 200px;
+  }
+  section.gallery .gallery-container .big-cell {
+    background-color: #ffffff;
+    width: 622px;
+    height: 409px;
+  }
+  section.gallery .gallery-container .big-cell .row-2 .cell.red {
+    border: none;
+  }
+  section.gallery .gallery-container .gallery-cells {
+    align-self: flex-end;
+    position: relative;
+  }
+  section.gallery .gallery-container .gallery-cells .cells-grid {
+    grid-template-columns: repeat(3, 107px);
+    grid-template-rows: repeat(3, 101px);
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+  }
+  section.gallery .gallery-container .gallery-cells .cells-grid .cell {
+    background-color: #ffffff;
+  }
+  section.gallery .gallery-container .gallery-cells .cells-grid .cell.red {
+    border: 7px solid #ff4242;
+  }
+  section.gallery .gallery-container .gallery-cells .heading {
+    position: absolute;
+    top: -70px;
+    left: -30px;
+  }
+}
+section.gallery {
+  background-color: #111111;
 }
 
 /*# sourceMappingURL=index.css.map */

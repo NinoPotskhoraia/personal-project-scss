@@ -1,0 +1,28 @@
+section.gallery{
+
+    .gallery-container{
+
+        padding:38px 50px 70px 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .gallery-cells{
+
+            .heading{
+                @include heading(24px, $secondary-text-color);
+                margin-bottom:35px;
+            }
+        }
+
+        .big-cell{
+            grid-template-rows: 191px;
+            width:271px;
+
+            .row-1{
+                background-color:$primary-color;
+            }
+            
+        }
+    }
+}

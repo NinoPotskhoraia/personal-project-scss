@@ -1,0 +1,55 @@
+@media(min-width:$desktop-width){
+
+    section.gallery{
+        padding-top:30px;
+
+        .gallery-container{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding:22px 200px;
+
+            .big-cell{
+                
+               background-color:$primary-color;
+               width:622px;
+               height:409px;
+
+               .row-2{
+                   .cell{
+                       &.red{
+                           border:none;
+                       }
+                   }
+               }
+            }
+
+            .gallery-cells{
+
+                 align-self: flex-end;
+                 position:relative;
+
+                .cells-grid{
+                    grid-template-columns: repeat(3, 107px);
+                    grid-template-rows: repeat(3, 101px);
+                    grid-row-gap:20px;
+                    grid-column-gap:15px;
+
+                    .cell{
+                        background-color:$primary-color;
+
+                        &.red{
+                            @include red-border;
+                        }
+                    }
+                }
+
+                .heading{
+                    position:absolute;
+                    top:-70px;
+                    left:-30px;
+                }
+            }
+        }
+    }
+}
