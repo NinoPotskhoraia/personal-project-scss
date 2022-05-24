@@ -1,0 +1,50 @@
+section.location{
+    @include mobile-grid;
+    grid-template-rows: 403px;
+
+    .location-wrapper{
+        padding-top:33px;
+
+        .title{
+            @include heading(24px, $primary-color);
+            margin-bottom:22px;
+        }
+
+        .address{
+            margin-top:30px;
+            margin-bottom:40px;
+            position: relative;
+
+            span{
+                font-size:14px;
+                line-height:20px;
+            }
+        }
+
+        .address:after{
+            @include division;
+            width:192px;
+            top: 75px;
+            left:40px;
+            opacity:0.4;
+        }
+
+        p{
+            font-size:12px;
+            margin-bottom:20px;
+        }
+
+        .location-icons{
+
+            padding-left:68px;
+
+            .icon{
+               width:45px;
+               height:44px;
+            }
+        }
+
+        
+    }
+
+}

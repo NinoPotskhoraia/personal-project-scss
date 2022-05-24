@@ -2,12 +2,14 @@
 
     section.gallery{
         padding-top:30px;
+        padding-bottom:40px;
+        
 
         .gallery-container{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding:22px 200px;
+            padding:22px 194px;
 
             .big-cell{
                 
@@ -47,7 +49,8 @@
                 .heading{
                     position:absolute;
                     top:-70px;
-                    left:-30px;
+                    left:-5px;
+                    padding-left:0;
                 }
             }
         }

@@ -22,3 +22,8 @@ span{
     display:grid;
 }
 
+.icon{
+    @include center;
+    @include icon;
+}
+

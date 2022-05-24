@@ -1,0 +1,57 @@
+section.location{
+    position:relative;
+
+    iframe{
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+    }
+
+    .location-wrapper{
+        grid-column: 2/3;
+        background-color:#ee272f;
+        mix-blend-mode: hard-light;
+        text-align: center;
+
+        .location-icon{
+            @include center;
+
+            width:45px;
+            height:45px;
+            border-radius: 50%;
+            background-color:gray;
+            margin:0 auto;
+        }
+
+        .address{
+            color:$primary-color;
+            font-weight:300;
+        }
+
+        p{
+            color:$primary-color;
+            font-weight:400;
+        }
+
+        .location-icons{
+
+            .icon{
+                background-color: #ee272f;
+                border-color:rgba(255, 255, 255, 0.5);
+
+                i{
+                    color:$icon-color;
+                }
+
+                i:hover{
+                    @include icon-hover;
+                }
+            }
+        }
+    }
+}

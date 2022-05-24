@@ -1,6 +1,6 @@
 @media (min-width:$desktop-width){
     .grid-container{
-        grid-template-columns: 200px 349px 1fr;
+        @include desktop-grid;
         grid-template-rows: 523px;
 
         .light-grey{

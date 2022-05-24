@@ -1,0 +1,52 @@
+@media(min-width:$desktop-width){
+    section.location{
+        @include desktop-grid;
+    
+        .location-wrapper{
+            padding-top:62px;
+    
+            .title{
+                @include heading(30px, $primary-color);
+                margin-bottom:15px;
+                padding-left:5px;
+            }
+    
+            .address{
+                margin-top:10px;
+                margin-bottom:40px;
+                padding-right:5px;
+                position: relative;
+    
+                span{
+                    font-size:16px;
+                    line-height:20px;
+                }
+            }
+    
+            .address:after{
+                @include division;
+                width:241px;
+                top: 80px;
+                left:60px;
+                opacity:0.5;
+            }
+    
+            p{
+                font-size:14px;
+                margin-bottom:20px;
+            }
+    
+            .location-icons{
+    
+                margin-left:40px;
+    
+                .icon{
+                   width:45px;
+                   height:44px;
+                }
+            }
+    
+            
+        }
+    }
+}

@@ -22,6 +22,10 @@
     border: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
+@mixin icon-hover {
+    color: $primary-icon-bg-color;
+}
+
 @mixin navigation {
     width: 63px;
     height: 59px;
@@ -38,6 +42,26 @@
 }
 
 
-@mixin red-border{
-    border:7px solid $primary-bg-color;
+@mixin red-border {
+    border: 7px solid $primary-bg-color;
+}
+
+@mixin mobile-grid {
+    grid-template-columns: 25px 1fr 25px;
+}
+
+@mixin tablet-grid {
+    grid-template-columns: 40px 344px 1fr;
+}
+
+@mixin desktop-grid {
+    grid-template-columns: 200px 349px 1fr;
+}
+
+@mixin division {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.3;
 }

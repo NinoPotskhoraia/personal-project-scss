@@ -1,0 +1,54 @@
+@media(min-width:$tablet-width){
+
+section.location{
+    @include tablet-grid;
+
+    .location-wrapper{
+        padding-top:52px;
+
+        .title{
+            @include heading(30px, $primary-color);
+            margin-bottom:22px;
+            padding-left:5px;
+        }
+
+        .address{
+            margin-top:15px;
+            margin-bottom:40px;
+            position: relative;
+
+            span{
+                font-size:16px;
+                line-height:20px;
+            }
+        }
+
+        .address:after{
+            @include division;
+            width:241px;
+            top: 80px;
+            left:60px;
+            opacity: 0.4;
+        }
+
+        p{
+            font-size:14px;
+            margin-bottom:20px;
+            padding-left:6px;
+        }
+
+        .location-icons{
+
+            margin-left:40px;
+
+            .icon{
+               width:45px;
+               height:44px;
+            }
+        }
+
+        
+    }
+}
+
+}

@@ -1,7 +1,7 @@
 @media (min-width:$tablet-width){
 
 .wrapper{
-    grid-template-columns: 40px 344px 1fr;
+    @include tablet-grid;
     grid-template-rows: 423px  60px;
     background-color:$secondary-bg-color;
     position: relative;
